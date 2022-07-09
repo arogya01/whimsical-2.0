@@ -133,7 +133,7 @@ function UserNameForm() {
 
   useEffect(() => {
     checkUsername(formValue);
-  }, [formValue]);
+  }, [formValue, checkUsername]);
 
   const onSubmit = async (event) => {
     event.preventDefault();
